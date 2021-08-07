@@ -12,6 +12,16 @@ void main()
         scanf("%d",&chuVi);
 
     }while(chuVi<0);
+    if(chuVi%4==0)
+    {
+        a=chuVi/4;
+        b=chuVi/4;
+    }else
+    {
+        a=(int)(chuVi/4);
+        b=(int) (chuVi/4)+1;
+    }
+    /*
     int nuaChuVi=chuVi/2;
     if(nuaChuVi%2==0)
     {
@@ -23,6 +33,7 @@ void main()
         a=nuaChuVi/2+1;
         b=nuaChuVi/2;
     }
+    */
     dienTich =a*b;
 
     printf("\nDien tich lon nhat cua hinh chu nhat la:%d",dienTich);
