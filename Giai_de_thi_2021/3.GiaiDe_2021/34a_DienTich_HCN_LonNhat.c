@@ -12,6 +12,7 @@ void main()
         scanf("%d",&chuVi);
 
     }while(chuVi<0);
+    //Cach 1:
     if(chuVi%4==0)
     {
         a=chuVi/4;
@@ -21,6 +22,7 @@ void main()
         a=(int)(chuVi/4);
         b=(int) (chuVi/4)+1;
     }
+    //Cach 2:
     /*
     int nuaChuVi=chuVi/2;
     if(nuaChuVi%2==0)
