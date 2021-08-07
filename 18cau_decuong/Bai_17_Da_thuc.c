@@ -71,10 +71,10 @@ void main()
         {
             case 1:
             {
-                printf("Nhap so he so P:");
+                printf("Nhap so luong he so P:");
                 scanf("%d",&n);
                 nhapMang(a,n);
-                printf("Nhap so he so Q:");
+                printf("Nhap so luong he so Q:");
                 scanf("%d",&m);
                 nhapMang(b,m);
                 flag1=1;
@@ -102,11 +102,11 @@ void main()
                 {
                     if(flag2)
                     {
-                        printf("\t%25s","Da thuc 1:");
+                        printf("\t%25s","Da thuc P:");
                         inMang(a,n);
-                        printf("\t%25s","Da thuc 2:");
+                        printf("\t%25s","Da thuc Q:");
                         inMang(b,m);
-                        printf("\t%25s","Da thuc 3:");
+                        printf("\t%25s","Da thuc T:");
                         inMang(c,p);
                         break;
                     }else
@@ -128,18 +128,18 @@ void main()
                 {
                     if(flag2)
                     {
-                        printf("\t%25s","Da thuc 1:");
+                        printf("%20s","Da thuc P:");
                         inMang(a,n);
-                        printf("\t%25s","Da thuc 2:");
+                        printf("%20s","Da thuc Q:");
                         inMang(b,m);
-                        printf("\t%25s","Da thuc 3:");
+                        printf("%20s","Da thuc T:");
                         inMang(c,p);
                         float x;
                         printf("Nhap x:");
                         scanf("%f",&x);
-                        printf("\tDa thuc 1:%.2f",giaTriDaThuc(a,n,x));
-                        printf("\tDa thuc 2:%.2f",giaTriDaThuc(b,m,x));
-                        printf("\tDa thuc tong:%.2f",giaTriDaThuc(c,p,x));
+                        printf("\tDa thuc P: %.2f\n",giaTriDaThuc(a,n,x));
+                        printf("\tDa thuc Q: %.2f\n",giaTriDaThuc(b,m,x));
+                        printf("\tDa thuc T: %.2f\n",giaTriDaThuc(c,p,x));
                         break;
                     }else
                     {
@@ -159,10 +159,11 @@ void main()
                 return;
             }
             default:
-                printf("Nhap 1->4!!\n");
+                printf("Nhap 1->5!!\n");
         }
         printf("\nNhap phim bat ki de ve menu");
         getch();
         system("cls");
     }
 }
+
