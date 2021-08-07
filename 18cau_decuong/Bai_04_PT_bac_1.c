@@ -29,3 +29,4 @@ void main(){
         printf("\tPhuong trinh co nghiem: x=%.2f, y=%.2f\n",x,y);
     }
 }
+
