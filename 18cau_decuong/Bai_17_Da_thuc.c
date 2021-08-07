@@ -21,17 +21,17 @@ void inMang(int a[],int n)
 
 int tongMang(int a[],int b[],int c[],int n,int m)
 {
-    int k=0,i=0,j=0;
+    int p=0,i=0,j=0;
     while(i<n&&j<m)
     {
-        c[k++]=a[i++]+ b[j++];
+        c[p++]=a[i++]+ b[j++];
     }
     while(i<n)
-        c[k++]=a[i++];
+        c[p++]=a[i++];
     while(j<m)
-        c[k++]=b[j++];
+        c[p++]=b[j++];
 
-    return k;
+    return p;
 }
 
 float giaTriDaThuc(int a[],int n, float x)
@@ -39,7 +39,7 @@ float giaTriDaThuc(int a[],int n, float x)
     float tong=0;
     for (int i=0;i<n;i++)
     {
-        tong+=(a[i]*pow(x,i));
+        tong+=(a[i]*pow(x,i)); //pow là hàm tính lũy thừa(hàm này có sẵn trong thư viện C) 
     }
     return tong;
 }
